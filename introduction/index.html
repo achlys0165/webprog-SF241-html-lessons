@@ -1,68 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>WEBPROG SF241 Introduction</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jan Sultan</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
- 
-   <h1>Personal Profile Web page - Jan Samuel G. Sultan</h1>
-   <p>
-    <b>About ME</b><br>
-     Hi, I'm Jan Samuel G. Sultan. I'm a driven CS student who’s passionate about cybersecurity, 
-     Python programming, ethical hacking, and continuous self‑improvement. I enjoy challenging myself through CTFs, 
-    solving problems, and learning tools that strengthen my technical and analytical skills.
-    <br><br>
-    
-    <b>Education / Achievements</b><br>
-     Bachelor of Science in Computer Science with Specialization in Cybersecurity<br>
-     Active in Capture the Flag (CTF) competitions and Hack The Box
-    <br><br>
 
-    <b>IT Experience</b><br>
-    Experience using Kali Linux, VirtualBox, and basic burpsuite<br>
-    Familiar with CTF concepts (web exploit, cryptography, OSINT)
-    <br><br>
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Jan Sultan</a>
 
-    <b>Hobbies & Interests</b><br>
-    Playing lead guitar and exploring tone shaping<br>
-    Music, performing with friends, and improving musical technique<br>
-    Cybersecurity challenges, problem-solving, and technical deep dives<br>
-    Watching science‑related content, philosophy, ethics, and understanding how discoveries affect society<br><br>
+        <div class="ms-auto"></div>
+    </div>
+</nav>
+
+<section class="name">
+
+    <div class="name-card">
+        <p class="text-secondary fw-bold small text-uppercase">Hello — I'm</p>
+        <h1 class="name-title">Jan Samuel G. Sultan</h1>
     
-    <b>Goals in Life / Dream</b><br>
-    Become a highly skilled cybersecurity professional<br>
-    Build a strong portfolio and work at a well‑known cybersecurity company<br>
-    Grow as a musician and perform confidently on stage<br>
-    Gain financial stability and continue improving resilience, discipline, and critical thinking<br><br>
-    
-    <b>Picture Gallery</b><br>
-   <img src="ngi.png" alt="profile">
-       
-       </p>
-   <div class="container-fluid mt-3">
-  <h1>Responsive Auto Layout Columns</h1>
-  <p>In Bootstrap 5, there is an easy way to create equal width columns: just use the <code>.col-md</code> class on a specified number of col elements. Bootstrap will recognize how many columns there are, and each column will get the same width.</p>
-  <p>If the screen size is <strong>less than 768px</strong>, the columns will stack horizontally.</p>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md bg-primary text-white">1 of 2</div>
-      <div class="col-md bg-dark text-white">2 of 2</div>
-    </div>  
-  </div>
-  <br>
-  
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md bg-primary text-white">1 of 4</div>
-      <div class="col-md bg-dark text-white">2 of 4</div>
-      <div class="col-md bg-primary text-white">3 of 4</div>
-      <div class="col-md bg-dark text-white">4 of 4</div>
-    </div>  
-  </div>
+        <p class="name-text">
+            Curious by nature. <br>
+            Cyber-driven by passion.
+        </p>
+
+        <div class="tags">Cybersecurity • Web Exploit • Musician</div>
+    </div>
+
+    <div class="name-profile">
+        <div class="name-glow"></div>
+
+        <img 
+            src="ngi.png" 
+            alt="profile picture"
+            class="name-img"
+        >
+    </div>
+</section>
+
+<div class="text-center pb-5 mb-5">
+    <a href="#profile-grid" class="text-decoration-none text-white small opacity-50">
+        Scroll to explore ↓
+    </a>
 </div>
+
+<section id="profile-grid" class="py-5">
+    <div class="container">
+        
+        <div class="row mb-5">
+            <div class="col-12">
+                <h6 class="text-gold text-uppercase ls-1 mb-2">Profile & Aspirations</h6>
+                <h2 class="text-white fw-bold display-5">Who I Am & <br>Where I'm Going</h2>
+            </div>
+        </div>
+
+        <div class="row g-4"> <div class="col-md-6">
+                <div class="profile-card h-100">
+                    <div class="card-badge">ME</div>
+                    <h4 class="text-gold mb-3">About Jan Samuel</h4>
+                    <p class="text-white opacity-75 mb-0">
+                        A driven CS student passionate about <span class="text-gold">cybersecurity</span>, 
+                        Python programming, and ethical hacking. I thrive on challenging myself through CTFs, 
+                        solving complex problems, and continuously learning tools to strengthen my 
+                        technical and analytical skills.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="profile-card h-100">
+                    <div class="card-badge">TECH</div>
+                    <h4 class="text-gold mb-3">Education & Experience</h4>
+                    <ul class="list-unstyled text-white opacity-75 mb-0">
+                        <li class="mb-3">
+                            <strong class="d-block text-white">BS Computer Science</strong>
+                            Specialization in Cybersecurity. Active in CTFs & Hack The Box.
+                        </li>
+                        <li>
+                            <strong class="d-block text-white">Tools & Concepts</strong>
+                            Kali Linux, VirtualBox, Burp Suite. Familiar with Web Exploit, Cryptography, and OSINT.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="profile-card h-100">
+                    <div class="card-badge">FUN</div>
+                    <h4 class="text-gold mb-3">Hobbies & Interests</h4>
+                    <ul class="list-unstyled text-white opacity-75 mb-0 card-list">
+                        <li> Playing lead guitar & tone shaping</li>
+                        <li> Performing & jamming with friends</li>
+                        <li> Cybersecurity challenges & deep dives</li>
+                        <li> Exploring Philosophy, Ethics & Science</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="profile-card h-100">
+                    <div class="card-badge">GOAL</div>
+                    <h4 class="text-gold mb-3">Goals & Dreams</h4>
+                    <ul class="list-unstyled text-white opacity-75 mb-0 card-list">
+                        <li> Become a highly skilled cybersecurity professional</li>
+                        <li> Build a strong portfolio for a top-tier company</li>
+                        <li> Grow as a musician and perform live</li>
+                        <li> Gain financial stability & personal resilience</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
