@@ -1,44 +1,219 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>WEBPROG SF241 Introduction</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jan Sultan | Home</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
- 
-   <h1>Personal Profile Web page - Jan Samuel G. Sultan</h1>
-   <p>
-    <b>About ME</b><br>
-     Hi, I'm Jan Samuel G. Sultan. I'm a driven CS student who’s passionate about cybersecurity, 
-     Python programming, ethical hacking, and continuous self‑improvement. I enjoy challenging myself through CTFs, 
-    solving problems, and learning tools that strengthen my technical and analytical skills.
-    <br><br>
-    
-    <b>Education / Achievements</b><br>
-     Bachelor of Science in Computer Science with Specialization in Cybersecurity<br>
-     Active in Capture the Flag (CTF) competitions and Hack The Box
-    <br><br>
 
-    <b>IT Experience</b><br>
-    Experience using Kali Linux, VirtualBox, and basic burpsuite<br>
-    Familiar with CTF concepts (web exploit, cryptography, OSINT)
-    <br><br>
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Jan Sultan</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li><a class="nav-link active" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li><a class="nav-link" href="projects.html">Projects</a></li>
+                <li><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-    <b>Hobbies & Interests</b><br>
-    Playing lead guitar and exploring tone shaping<br>
-    Music, performing with friends, and improving musical technique<br>
-    Cybersecurity challenges, problem-solving, and technical deep dives<br>
-    Watching science‑related content, philosophy, ethics, and understanding how discoveries affect society<br><br>
-    
-    <b>Goals in Life / Dream</b><br>
-    Become a highly skilled cybersecurity professional<br>
-    Build a strong portfolio and work at a well‑known cybersecurity company<br>
-    Grow as a musician and perform confidently on stage<br>
-    Gain financial stability and continue improving resilience, discipline, and critical thinking<br><br>
-    
-    <b>Picture Gallery</b><br>
-   <img src="https://media.licdn.com/dms/image/v2/D4E03AQFkjDsmd39KUA/profile-displayphoto-scale_400_400/B4EZmQr31ZGYAg-/0/1759069046317?e=1764806400&v=beta&t=SHSYSbhRQzq2P8XlJ68WdG1Pwa_cWiNDjnFtHoGc5R4" alt="Image of myself" width="500" height="500">
-     
-   </p>
+<section class="name" id="hero">
+    <div class="name-card">
+        <p class="text-secondary fw-bold small text-uppercase">Hello — I'm</p>
+        <h1 class="name-title">Jan Sultan</h1>
+        <p class="name-text">Curious by nature.<br>Cyber-driven by passion.</p>
+        <div class="tags">Cybersecurity • Web Exploit • Musician</div>
+            <div class="social-links mt-4">
+                <a href="https://github.com/achlys0165" target="_blank" class="social-link-item">
+                    <img src="github.png" alt="GitHub" class="social-img">
+                </a>
+                
+                <a href="www.linkedin.com/in/jansultan0210" target="_blank" class="social-link-item">
+                    <img src="linkedin.png" alt="LinkedIn" class="social-img">
+                </a>
+            </div>
 
+        </div>
+
+    </div>
+    <div class="name-profile">
+        <img src="ngi.png" alt="Jan Sultan" class="name-img" style="max-width: 2000px;">
+    </div>
+</section>
+
+<section id="profile-carousel" class="py-5">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-12 ">
+                <h6 class="text-gold text-uppercase ls-1 mb-2">Profile & Aspirations</h6>
+                <h2 class="text-white fw-bold display-5">Who I Am <br>& Where I'm Going</h2>
+            </div>
+        </div>
+
+        <div id="aspirationCarousel" class="carousel slide profile-card-large" data-bs-ride="false">
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+                    <div class="p-5">
+                        <div class="d-flex justify-content-between align-items-start mb-4">
+                            <h3 class="text-gold mb-4">About Jan Samuel</h3>
+                            <div class="card-badge-static">ME</div>
+                        </div>
+                        
+                       <div class="row">
+                            <div class="col-lg-8">
+                                <p class="text-white opacity-75 fs-5 ms-5"> 
+                                    A driven CS student passionate about <span class="text-gold">cybersecurity</span>, Python programming, and ethical hacking. 
+                                    I thrive on challenging myself through CTFs, solving complex problems, and continuously learning tools to strengthen my technical and analytical skills.
+                                </p>
+                            </div>
+                            <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                                <img src="char.png" alt="character" style="width: 250px; height: auto; object-fit: contain;">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="p-5">
+                        <div class="d-flex justify-content-between align-items-start mb-4">  
+                            <h3 class="text-gold mb-4">Education / Achievement</h3>
+                            <div class="card-badge-static">TECH</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <p class="text-white opacity-75 fs-5 ms-5"> 
+                                    Bachelor of Science in Computer Science with Specialization in Cybersecurity.<br> 
+                                    Active in Capture the Flag (CTF) competitions and Hack The Box.
+                                </p>      
+                            </div>
+                            
+                            <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                                <i class="fas fa-user-shield text-gold opacity-25" style="font-size: 5rem;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="carousel-item">
+                    <div class="p-5 ">
+
+                        <div class="d-flex justify-content-between align-items-start mb-4">  
+                            <h3 class="text-gold mb-4">Skills</h3>
+                            <div class="card-badge-static">TOOLS</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="text-white opacity-75 fs-5 ms-5">
+                                    <p>Python, HTML/CSS, and basic knowledge of C and Java. 
+                                        Experienced with networking concepts, Linux systems, and cybersecurity tools.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                                <i class="fas fa-user-shield text-gold opacity-25" style="font-size: 5rem;"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="p-5">
+                        <div class="d-flex justify-content-between align-items-start mb-4">
+                            <h3 class="text-gold mb-4">Hobbies & Interests</h3>
+                            <div class="card-badge-static">FUN</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="text-white opacity-75 fs-5 ms-5">
+                                    <p>
+                                    Beyond my technical studies, I enjoy playing <span class="text-gold">lead guitar and shaping unique tones. </span>
+                                    I frequently spend time performing and jamming with friends, alongside diving deep 
+                                    into various cybersecurity challenges. Additionally, I am passionate about exploring 
+                                    the intersections of philosophy, ethics, and science.
+                                    </p>
+                                </div>
+                                
+                            </div>
+
+                            <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                                <i class="fas fa-user-shield text-gold opacity-25" style="font-size: 5rem;"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="p-5">
+                        <div class="d-flex justify-content-between align-items-start mb-4">
+                            <h3 class="text-gold mb-4">Goals & Dreams</h3>
+                            <div class="card-badge-static">GOAL</div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-lg-8">
+                                <div class="text-white opacity-75 fs-5 ms-5">
+                                    <p>
+                                    My primary ambition is to become a highly skilled cybersecurity professional  
+                                    and build a strong portfolio for a top-tier company. 
+                                    Beyond my career, I am committed to achieving long-term financial stability and personal resilience , 
+                                    allowing me to grow as a musician and, ultimately, marry the love of my life.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                                <i class="fas fa-user-shield text-gold opacity-25" style="font-size: 5rem;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#aspirationCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#aspirationCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+
+            <div class="carousel-indicators position-relative mt-4">
+                <button type="button" data-bs-target="#aspirationCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#aspirationCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#aspirationCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#aspirationCarousel" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#aspirationCarousel" data-bs-slide-to="4"></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    window.addEventListener('scroll', () => {
+        const hero = document.getElementById('hero');
+        hero.style.opacity = 1 - window.scrollY / 600;
+    });
+</script>
 </body>
 </html>
