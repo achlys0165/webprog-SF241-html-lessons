@@ -202,26 +202,63 @@ body::before {
 }
 
 /* Gallery Grid */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+/* Container for Horizontal Scrolling */
+.gallery-wrapper {
+    width: 100%;
+    overflow-x: auto; /* Enables horizontal scroll */
+    overflow-y: hidden; /* Prevents vertical scroll */
+    white-space: nowrap; /* Keeps items in a single line */
+    padding: 50px 0 80px 50px;
+    scrollbar-width: none; /* Hides scrollbar for Firefox */
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory; /* Makes pictures snap into place */
+}
+
+/* Hides scrollbar for Chrome/Safari */
+.gallery-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-scroll-container {
+    display: inline-flex;
+    gap: 30px;
 }
 
 .gallery-item {
+    flex: 0 0 auto; /* Prevents images from shrinking */
+    width: 400px; /* Adjust size to your preference */
+    height: 550px;
+    border-radius: 15px;
     overflow: hidden;
-    border-radius: 10px;
-    height: 400px;
+    scroll-snap-align: start;
+    
+    /* Initial state for Fading Transition */
+    opacity: 0.1; 
+    transform: scale(0.9) translateY(20px);
+    transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Visible state triggered by JavaScript */
+.gallery-item.is-visible {
+    opacity: 1;
+    transform: scale(1) translateY(0);
 }
 
 .gallery-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: 0.5s ease;
+    transition: transform 0.5s ease;
 }
 
-.gallery-item:hover img { transform: scale(1.1); }
+.gallery-item:hover {
+    border-color: #FFA500; /* Gold border on hover */
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
 
 /* Form Elements */
 .form-control {
@@ -230,7 +267,6 @@ body::before {
     color: white;
     padding: 15px;
 }
-
 @media (max-width: 991px) {
     .name { flex-direction: column-reverse; text-align: center; padding-top: 120px; }
     .name-profile { width: 80%; }
