@@ -267,6 +267,7 @@ body::before {
     color: white;
     padding: 15px;
 }
+
 @media (max-width: 991px) {
     .name { flex-direction: column-reverse; text-align: center; padding-top: 120px; }
     .name-profile { width: 80%; }
