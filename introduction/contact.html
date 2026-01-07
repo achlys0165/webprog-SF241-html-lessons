@@ -26,21 +26,31 @@
         <div class="col-md-7 mt-5">
             <div class="profile-card">
                 <h2 class="text-gold mb-4">Send a Message</h2>
-                <form action="https://formspree.io/f/your-id" method="POST">
-                    <div class="mb-3">
-                        <label class="text-white mb-2">Full Name</label>
-                        <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
-                    </div>
-                    <div class="mb-3">
-                        <label class="text-white mb-2">Email Address</label>
-                        <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label class="text-white mb-2">Your Message</label>
-                        <textarea name="message" class="form-control" rows="6" placeholder="Write your message here..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-warning w-100 fw-bold py-3 mt-3">Send Message</button>
-                </form>
+                    <form action="https://formspree.io/f/xeeoyopv" method="POST">
+                        <input type="hidden" name="_subject" value="New message from portfolio website">
+                        <input type="hidden" name="_captcha" value="false">
+                    
+                        <div class="mb-3">
+                            <label class="text-white mb-2">Full Name</label>
+                            <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label class="text-white mb-2">Email Address</label>
+                            <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label class="text-white mb-2">Your Message</label>
+                            <textarea name="message" class="form-control" rows="6"
+                                placeholder="Write your message here..." required></textarea>
+                        </div>
+                    
+                        <button type="submit" class="btn btn-warning w-100 fw-bold py-3 mt-3">
+                            Send Message
+                        </button>
+                    </form>
+
             </div>
         </div>
     </div>
